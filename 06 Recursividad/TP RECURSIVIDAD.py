@@ -65,7 +65,7 @@ def validar_rango(numero, minimo, maximo):
         numero = validar_natural(f'Ingrese un número entre {minimo} y {maximo}: ')
     return numero
         
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1 - Crear una funcion recursiva que calcule el factorial de un número. Luego utiliza la funcion para 
 # calcular y mostrar el factoria de todos los enteros entre 1 y el Nª a ingresar por el usuario. 
@@ -75,7 +75,7 @@ for i in range(0, cantidad_factoriales + 1):
     print(f'Factorial de {i}: {factorial(i)}')
 
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 2 - Crea una funcion recursiva que calcule el valor de la serie de fibonacci en la poscion indicada. 
 # Posteriormente muestre a serie completa hastaa posicion que el usuario especifique. 
@@ -88,7 +88,7 @@ for i in range(0, numero_limite_serie_fibonacci + 1):
     print(f'Fibonacci Nº {i}: {fibonacci(i)}')
 
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 3 - Crear una funcion recursiva que calcule la potencia de un numero base elevado a un exponente.
 # hasta la posicion que el usuario especifique. 
@@ -100,7 +100,7 @@ potencia = potencia(base, exponente)
 
 print(f'La potencia que resulta de elevar {base} a {exponente} es: {potencia}')
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 4 - Crea una función que que reciba un número entero positivo en base decimal y entregue su 
 # representación en binario como cadena de texto.
@@ -109,7 +109,7 @@ decimal = validar_natural('Ingrese el numero decimal que quiere convertir a bina
 print(f'El numero {decimal} en binario es: {decimal_a_binario(decimal)}')
 
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 5 - Implementar función llamada es_palindromo que reciba una cadena de teto sin espacios ni tildes
 # y devuelva verdadero si es palindromo y falso si no lo es. 
@@ -121,15 +121,16 @@ else:
     print(f'La cadena "{palabra}" no es palindromo. ')
     
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # 6 - Escribir una funcion recursiva en pyton llamada suma_digitos(n) que reciba n numero entero positivo
 # y devuelva la suma de todos sus digitos. 
 
-numero = validar_natural('Ingrese un número entero positivo: ')
-print(f'La suma de los digitos del numero {numero} es: {suma_digitos(numero)}')
+numero_sumar_digitos = validar_natural('Ingrese un número entero positivo: ')
+print(f'La suma de los digitos del numero {numero_sumar_digitos} es: {suma_digitos(numero_sumar_digitos)}')
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 7 - Escribir una funcion recursiva contar_bloques(n) que reciba el numero de bloques de la base y 
 # devuelva el total de bloques que se necesita para construir una piramide.
@@ -137,7 +138,7 @@ print(f'La suma de los digitos del numero {numero} es: {suma_digitos(numero)}')
 cantidad_bloques_base = validar_natural('Ingrese la cantidad de bloques de la base de la piramide: ')
 print(f'La cantidad de bloques de la piramide cuya base tiene {cantidad_bloques_base} bloques es: {contar_bloques(cantidad_bloques_base)}')
 
-#-------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 # 8 - Escribir una funcion recursiva llamada contar_digito(numero, digito) que reciba un Nº natural
 # y un digito del 0 al 9, y devuleva cuantas veces aparece ese digito dentro del numero. 
@@ -145,3 +146,5 @@ print(f'La cantidad de bloques de la piramide cuya base tiene {cantidad_bloques_
 numero = validar_natural('Ingrese un número entero positivo: ')
 digito = (validar_rango(validar_natural('Ingrese un numero entero positivo entre 0 y 9: '), 0, 9))
 print(f'La cantidad de veces que se encuentra el digito {digito} en el número {numero} es: {contar_digito(numero, digito)}')
+
+#-------------------------------------------------------------------------------------------------------------------------------------------
